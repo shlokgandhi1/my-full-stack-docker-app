@@ -1,25 +1,19 @@
 services:
   nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
+    image: YOUR_DOCKERHUB_USERNAME/nginx:YOUR_SHA
     container_name: nginx-container
-
     ports:
       - "80:80"
-
     depends_on:
       - frontend
-      - backend
-
+      - backend-1
+      - backend-2
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: YOUR_DOCKERHUB_USERNAME/frontend:YOUR_SHA
     container_name: frontend-container
-
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: backend-container
+  backend-1:
+    image: YOUR_DOCKERHUB_USERNAME/backend:YOUR_SHA
+    container_name: backend-container-1
+  backend-2:
+    image: YOUR_DOCKERHUB_USERNAME/backend:YOUR_SHA
+    container_name: backend-container-2
