@@ -2,7 +2,7 @@
 
 A complete full-stack web application demonstrating CI/CD pipeline integration with Docker containerization, load balancing, and automated deployment.
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - **Backend**: NestJS (TypeScript)
 - **Frontend**: React with Vite
@@ -11,7 +11,7 @@ A complete full-stack web application demonstrating CI/CD pipeline integration w
 - **CI/CD**: GitHub Actions
 - **Container Registry**: Docker Hub
 
-## 📌 Project Purpose
+## Project Purpose
 
 This project demonstrates a complete CI/CD pipeline for a full-stack application (CSC 424 coursework). It showcases:
 - Multi-container application architecture
@@ -19,7 +19,7 @@ This project demonstrates a complete CI/CD pipeline for a full-stack application
 - Load balancing with multiple backend instances
 - Docker image versioning and tagging
 
-## ✨ Key Achievements
+## Key Achievements
 
 - **Built a full CI/CD pipeline from scratch**: Used Multipass as the development + deployment environment, containerized the entire stack, created Docker Hub repos, added GitHub secrets, and automated image building/pushing for frontend, backend, and nginx.
 
@@ -31,7 +31,7 @@ This project demonstrates a complete CI/CD pipeline for a full-stack application
 
 - **Validated the entire pipeline end-to-end**: Confirmed CI builds, CD deployments, Docker Hub image updates, Multipass-based production runs, and load-balanced traffic — resulting in a fully automated, scalable, production-ready workflow.
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Local Development
 
@@ -72,7 +72,7 @@ cd frontend
 npm run lint           # ESLint
 ```
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 The GitHub Actions workflow (`.github/workflows/docker-build-push.yml`) automates:
 
@@ -87,13 +87,13 @@ The GitHub Actions workflow (`.github/workflows/docker-build-push.yml`) automate
 - `DOCKERHUB_USERNAME`
 - `DOCKERHUB_TOKEN`
 
-## 📋 Project Structure
+## Project Structure
 
 - **backend/** - NestJS API server
 - **frontend/** - React application
 - **nginx/** - Reverse proxy & load balancer configuration
 - **docker-compose.yml** - Deployment configuration (2 backend instances)
 
-## 📄 License
+## License
 
 Part of CSC 424 (CI/CD Pipelines & Load Balancing) coursework.
